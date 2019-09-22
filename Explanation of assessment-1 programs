@@ -1,0 +1,65 @@
+1:Program of comparing object whether they have same properties or not
+
+Explanation:In this program we create two objects ob1 and ob2 that have same properties and values. we use object.getOwnPropertyNames() to get the properties of objects.
+we also use Object.values() to get the values of object then we compare object based on their properties as well as values.
+
+2:program about class and inheritence
+
+Explanation: In this program first we creat two classes Bank and Customer using keyword class, then we make a Customer class as a child class of 
+class Bank by using keyword extends (to achieve inheritence). we make a withdraw and deposit methods in Cutomer class that access the DepositProcess() and 
+WithdrawProcess() methods of base class by using keyword super. in  base class(Bank) in the methods Depositprocess() and WithdrawProcess() we calling a 
+method show() using this keyword that represent the reference of current object.
+
+3:Destructuring assignments
+Explanation: The destructuring assignment is used to unpack the values from arrays, or properties from objects, into different variables.
+It uses similar syntax, but on the left-hand side of the assignment to define what values to unpack from the sourced variable. In above program
+we also use ...rest. in this  ... is spread operator with varibale name rest. it take rest of the elements rather than 1 (a[0]).
+
+4:Program of String and Template literals
+
+Explanation: we use  double quotes (") or single quotes (') in string literals but we use back-ticks(`) 
+in template literals. Template literals can contain placeholders. These are indicated by the dollar sign 
+and curly braces (${expression}).As above code in template litrals we don't need to add \n to put a string into new line.
+string.raw() method is a tag function, allows you to access the raw strings as they were entered, without processing escape sequences.
+
+5:Conversing two arrays in one by using map ,arrow function and iterators.
+Explanation: in this program to make third array a3 which contain values of both a1 and a2 arrays, we use symbol.iterator prortocol that
+is used to make a1 iteratable. then we use  next() method which returns an object with two properties: value, the next value in the sequence;
+ and done, which is true if the last value in the sequence has already been consumed.
+
+6:Email validation using regular expression:
+
+Explanation: In above program we use regular expression inside backslashes(/). in regular expression 
+we divide it into four parts (in four () round brackets). the dtails of regular expression is following:
+^ is used to indicate the begening of string.
+
+-----first part------
+[a-z] denotes alphabets from a to z.
+\d denotes numarics  from 0 to 9
+\. denotes . in string
++ it denotes one or more than one characters
+
+for eg. sk623520
+
+-----second part------
+@ it must be present in a string
+[a-z] denotes alphabets from a to z.
+{2,10} it denotes the range  of character from minimum 2 to maximum 10
+
+for eg. sk623520@gmail
+
+-----third part------
+. third part must be start with (.)
+[a-z] denotes alphabets from a to z.
+{2,10} it denotes the range  of character from minimum 2 to maximum 10
+
+for eg. sk623520@gmail.com
+
+-----fourth part------
+. fourth part must be start with (.)
+[a-z] denotes alphabets from a to z.
+{2,10} it denotes the range  of character from minimum 2 to maximum 10
+? make the fourth part opetional
+
+$ is used to indicate the end of string.
+for eg. sk623520@gmail.co.in
