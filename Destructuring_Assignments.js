@@ -3,7 +3,7 @@
 //use with array
  var a, rest;
  var arra1=[1,2,3,4,5,6];
- [a, ...rest]=arra1;      //unpack elements from array and put it into variables using rest parameter
+ [a, ...rest]=arra1;      //unpack elements from array and put it into variables using spread operator
 console.log(a);               //1
 console.log(rest);          //2,3,4,5,6
 
