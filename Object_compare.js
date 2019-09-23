@@ -9,8 +9,7 @@ var obj2 = {
   name: "shiv",
   class: "11th",
   roll_no: 21,
-  age: 23,
-
+  age: 23, 
 };
 function compare(obj1, obj2) {
   var a = Object.getOwnPropertyNames(obj1);   //intialize properties of object obj1 into varibale a
@@ -22,10 +21,7 @@ function compare(obj1, obj2) {
     return "number of properties are not  equal";
   }
   else {
-    if (av.length == bv.length)                 //compare number of values of both objects
-    {
       for (let i = 0; i < a.length; i++) {
-        for (let j = 0; j < av.length; j++) {
           if (a[i] !== b[i])                    //compare  properties
           {
             return "properties are not same";
@@ -36,14 +32,9 @@ function compare(obj1, obj2) {
               return "values are not same";
             }
           }
-        }
-
-      }
     }
   }
   return "Properties and values are same";
-
- 
 }
 
 var result = compare(obj1, obj2);
