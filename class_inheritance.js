@@ -7,7 +7,7 @@ class Bank{                     //creating class using class keyword
     }
     show(amt)
     { 
-     //return(" balance is :"+amt);
+    
      return(this.balance=amt);
     }
     DepositProcess(amt)
